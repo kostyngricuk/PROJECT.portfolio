@@ -17,7 +17,7 @@ app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.get('/', (req, res) => {
     res.render('pages/index', {
-        title: 'Kanstantsin Hrytsuk'
+        title: 'Kanstantsin H.'
     })
 });
 

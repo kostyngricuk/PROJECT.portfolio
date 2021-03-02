@@ -1,10 +1,131 @@
+.un-skewX {
+    display: inline-block;
+    transform: skewX(12deg);
+}
+/* COLORS */
+.bg-black {
+    background-color: var(--color-black);
+}
+.bg-white {
+    background-color: var(--color-white);
+}
+.bg-green {
+    background-color: var(--color-main-green);
+}
+.bg-orange {
+    background-color: var(--color-main-orange);
+}
+.bg-blue {
+    background-color: var(--color-main-blue);
+}
+.color-green {
+    color: var(--color-main-green);
+}
+.color-orange {
+    color: var(--color-main-orange);
+}
+.color-blue {
+    color: var(--color-main-blue);
+}
+/* COLORS END */
+
+/* NAVBAR */
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.nav-link {
+    color: var(--color-white)!important;
+    font-weight: 600;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-main-green)!important;
+}
+.nav-link_with-badge {
+    position: relative;
+    background: var(--color-main-green);
+    transform: skewX(-12deg);
+    margin-left: 1em;
+    padding-right: calc(40px + 1.3rem)!important;
+}
+.nav-link_with-badge:hover {
+    color: var(--color-white)!important;
+    background: var(--color-main-orange);
+}
+.navbar-text {
+    padding-right: 1em;
+    margin-right: 1em;
+    position: relative;
+}
+.navbar-text::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 60%;
+    right: 0;
+    top: 50%;
+    transform: skewX(-12deg) translateY(-50%);
+    background-color: var(--color-white);
+}
+/* NAVBAR END */
+
+/* BADGE */
+.nav-link_with-badge .badge {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border-radius: 0;
+    padding: 0;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    font-size: 12px;
+    margin-left: 0.5em;
+}
+/* BADGE END */
+
+/* PROGRESS */
+.progress-group {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    grid-gap: 0.5em 1em;
+    align-items: flex-end;
+}
 .progress-wrap + .progress-wrap {
     margin-top: 0.5em;
 }
 .progress {
     height: 2em;
 }
+.progress-bar {
+    background-color: var(--color-main-blue);
+}
 .progress__title {
     font-weight: 600;
     font-size: 1em;
+}
+/* PROGRESS END */
+
+.card_lang + .card_lang {
+    margin-top: 1em;
+}
+
+.card_protfolio {
+    height: 200px;
+    overflow: hidden;
+    max-width: 100%!important;
+}
+.card_protfolio > .row {
+    height: 100%;
+}
+.card_protfolio .badge {
+    font-size: 12px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
