@@ -1,0 +1,10 @@
+.progress-wrap + .progress-wrap {
+    margin-top: 0.5em;
+}
+.progress {
+    height: 2em;
+}
+.progress__title {
+    font-weight: 600;
+    font-size: 1em;
+}

@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --color-white: #fff;
+    --color-black: #212529;
+    --color-gray: rgba(255,255,255,.55);
+}
+.content {
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+section + section {
+    margin-top: 40px;
+}
+
+/* FOOTER */
+.footer-wrap {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.footer-wrap .nav-link {
+    color: var(--color-gray);
+}
+.footer-wrap .nav-link.active {
+    color: var(--color-white);
+}
+/* FOOTER END*/
